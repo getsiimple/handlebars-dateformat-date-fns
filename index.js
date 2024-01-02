@@ -1,7 +1,8 @@
 'use strict';
 
-var moment = require('moment');
+var { addMinutes, format } = require('date-fns');
 
-module.exports = function dateFormat(date, format, utc) {
-    return (utc === true) ? moment(date).utc().format(format) : moment(date).format(format);
+// https://github.com/date-fns/date-fns/blob/main/docs/unicodeTokens.md
+module.exports = function dateFormat(date, desiredFormat, utc) {
+    return (utc === true) ? format(addMinutes(date, date.getTimezoneOffset()), desiredFormat) : format(date, desiredFormat);
 };

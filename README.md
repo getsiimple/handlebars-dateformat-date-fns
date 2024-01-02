@@ -18,8 +18,8 @@
 
 Parameters:
 
-* `date` is a JavaScript [Date](https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Global_Objects/Date) or an instance of [moment](http://momentjs.com/).
-* `format` is a string containing the desired format (can be a variable or a literal). Placeholders are defined in the [moment.js docs](http://momentjs.com/docs/#/displaying/).
+* `date` is a JavaScript [Date](https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Global_Objects/Date).
+* `format` is a string containing the desired format (can be a variable or a literal). Placeholders are defined in the [date-fns docs](https://date-fns.org/docs/Getting-Started).
 * `utc` optional boolean (`true` or `false`) to decide whether or not to convert the date to UTC before formatting. Defaults to `false`.
 
 ## Example
